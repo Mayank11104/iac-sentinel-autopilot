@@ -4,6 +4,8 @@ This document details the architecture, design philosophy, and technical impleme
 
 The Sentinel is a **reviewer, never a decision-maker**. It intercepts CI/CD pipelines, analyzes Infrastructure as Code changes from four specialized angles, and hands a professional Infrastructure Audit Report to a human administrator for the final call.
 
+🎥 **[Watch the 5-Minute Pitch Video & Technical Explanation here](https://youtu.be/qLfG2SPv7Qs)**
+
 ---
 
 ## 1. The Problem Statement

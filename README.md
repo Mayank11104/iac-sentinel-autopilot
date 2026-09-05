@@ -3,6 +3,8 @@
 > **AI-Powered Infrastructure Risk Gate for CI/CD Pipelines**
 > The Sentinel watches. You decide. The Autopilot executes.
 
+🎥 **[Watch the 5-Minute Pitch Video & Technical Explanation here](https://youtu.be/qLfG2SPv7Qs)**
+
 A production-grade Infrastructure as Code (IaC) platform that provisions a fully isolated, multi-environment AWS infrastructure using **Terraform** and **Ansible** — guarded by a **multi-agent AI system** that reviews every infrastructure change before a single resource is touched.
 
 The AI is a **reviewer, never a decision-maker**. It intercepts the CI/CD pipeline, analyzes the Terraform plan from four specialized angles (Security, Cost, Blast Radius, Integrity), generates a professional **Infrastructure Audit Report PDF**, and emails it to the administrator. The pipeline then waits for a human to approve or reject the deployment.
