@@ -43,11 +43,11 @@ from .nodes.synthesizer import synthesizer_node
 # ---------------------------------------------------------------------------
 MODEL_ID = os.environ.get(
     "BEDROCK_MODEL_ID",
-    "mistral.mistral-7b-instruct-v0:2",  # Verified working in ap-south-1 via IAM
+    "anthropic.claude-sonnet-4-20250514-v1:0",
 )
 SYNTHESIZER_MODEL_ID = os.environ.get(
     "BEDROCK_SYNTHESIZER_MODEL_ID",
-    "mistral.mistral-7b-instruct-v0:2",
+    "anthropic.claude-sonnet-4-20250514-v1:0",
 )
 
 
