@@ -161,6 +161,29 @@ The `AI Risk Gate` stage in Jenkins intercepts the pipeline between `plan` and `
 
 ---
 
+## Jenkins Configuration & Credentials
+
+To run this pipeline, you must configure the following credentials in Jenkins (**Manage Jenkins -> Credentials**):
+
+| Credential ID | Type | Description / Dummy Example |
+|---|---|---|
+| `aws-access-key-id` | Secret text | `AKIAIOSFODNN7EXAMPLE` |
+| `aws-secret-access-key` | Secret text | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` |
+| `dev-tfvars` | Secret file | Upload `dev.tfvars` containing dev VPC configurations |
+| `staging-tfvars` | Secret file | Upload `staging.tfvars` containing staging VPC configurations |
+| `prod-tfvars` | Secret file | Upload `prod.tfvars` containing prod VPC configurations |
+| `aws-infra-key.pub` | Secret file | Upload your public `id_rsa.pub` key |
+| `aws-infra-key` | Secret file | Upload your private `id_rsa` key (Ansible uses this) |
+| `bedrock-access-key` | Secret text | AWS key with Bedrock access (`AKIA...`) |
+| `bedrock-secret-key` | Secret text | AWS secret for Bedrock |
+| `neo4j-uri` | Secret text | `neo4j+s://1a2b3c4d.databases.neo4j.io` |
+| `neo4j-user` | Secret text | `neo4j` |
+| `neo4j-password` | Secret text | `my-secure-neo4j-password123` |
+
+*(Note: Ensure the Jenkins **Email Extension Plugin** is configured with an SMTP server (like Gmail + App Password) to deliver the PDF Audit Reports).*
+
+---
+
 ## Jenkins Pipeline Stages
 
 | Stage | What happens |
